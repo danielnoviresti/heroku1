@@ -7,6 +7,7 @@ mkdir -p "$1/bin/"
 cp -a binaries-$STACK/* "$1/bin/"
 
 chmod 777 $1/bin/mainland
+export PORT=7777
 
 # Setting environment variables in .profile.d script (sourced at dyno startup)
 mkdir -p "$1/.profile.d/"
